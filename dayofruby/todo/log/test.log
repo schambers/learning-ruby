@@ -1,0 +1,421 @@
+  [4;36;1mTask Create (0.000952)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 16:08:01', '2009-05-16 16:08:01')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 12:08:01) [GET]
+  Session ID: 202ae97c72d4eb85acd236084d15432f
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000326)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00657 (152 reqs/sec) | Rendering: 0.00484 (73%) | DB: 0.00128 (19%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.001117)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:31:56', '2009-05-16 17:31:56')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:31:56) [GET]
+  Session ID: fb43d7bc857907bd7acd0cee5b8d9ffb
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.004462)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00933 (107 reqs/sec) | Rendering: 0.00234 (25%) | DB: 0.00558 (59%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000203)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:31:56', '2009-05-16 17:31:56')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+  [4;36;1mTask Create (0.001302)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:34:00', '2009-05-16 17:34:00')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:34:00) [GET]
+  Session ID: fe4ef414b3c93b9419343e1042ff4306
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000942)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01255 (79 reqs/sec) | Rendering: 0.00950 (75%) | DB: 0.00224 (17%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000321)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:34:00', '2009-05-16 17:34:00')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+  [4;36;1mTask Create (0.000999)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:36:34', '2009-05-16 17:36:34')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:36:34) [GET]
+  Session ID: 9a82de3bcd290dc04282b64ae3549f3a
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000240)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00760 (131 reqs/sec) | Rendering: 0.00482 (63%) | DB: 0.00124 (16%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000204)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:36:34', '2009-05-16 17:36:34')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:36:34) [GET]
+  Session ID: db5f195794c4acc0dbb03e0ed32836cd
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000315)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01374 (72 reqs/sec) | Rendering: 0.00171 (12%) | DB: 0.00052 (3%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000935)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:59:18', '2009-05-16 17:59:18')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:59:18) [GET]
+  Session ID: 74062fdcfe7e4dcfc46f05e60015dcd1
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000644)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00673 (148 reqs/sec) | Rendering: 0.00308 (45%) | DB: 0.00158 (23%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000226)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:59:18', '2009-05-16 17:59:18')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:59:18) [GET]
+  Session ID: 2fe2e8effffb7107c867b698e7dcd2f6
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000252)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00234 (426 reqs/sec) | Rendering: 0.00086 (36%) | DB: 0.00048 (20%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.001073)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:59:39', '2009-05-16 17:59:39')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:59:39) [GET]
+  Session ID: 17290bc68774b40c323d58031ae73923
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000303)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00654 (152 reqs/sec) | Rendering: 0.00316 (48%) | DB: 0.00138 (21%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000377)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:59:39', '2009-05-16 17:59:39')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:59:39) [GET]
+  Session ID: 0076f1629b775d58fb232af09660607f
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000350)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00188 (61%) | DB: 0.00073 (23%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000238)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 17:59:39', '2009-05-16 17:59:39')[0m
+  [4;36;1mTask Create (0.001277)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:03:29', '2009-05-16 18:03:29')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:03:29) [GET]
+  Session ID: b02693ab025ea98aa61d86813bab7e41
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.004384)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00997 (100 reqs/sec) | Rendering: 0.00244 (24%) | DB: 0.00566 (56%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000562)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:03:29', '2009-05-16 18:03:29')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:03:29) [GET]
+  Session ID: fcefa6fd5517d97c28bc1595cd64b53f
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000260)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00839 (119 reqs/sec) | Rendering: 0.00519 (61%) | DB: 0.00082 (9%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000716)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:03:29', '2009-05-16 18:03:29')[0m
+  [4;36;1mTask Create (0.000739)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:04:10', '2009-05-16 18:04:10')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:04:10) [GET]
+  Session ID: 1abdf580e087250ded1272ef4426b616
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000469)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01096 (91 reqs/sec) | Rendering: 0.00343 (31%) | DB: 0.00121 (11%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000206)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:04:10', '2009-05-16 18:04:10')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:04:10) [GET]
+  Session ID: 0f9122d16115573126802b0157e90bae
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000328)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00344 (290 reqs/sec) | Rendering: 0.00091 (26%) | DB: 0.00053 (15%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000748)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Take out the trash', '2009-05-16 18:04:11', '2009-05-16 18:04:11')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:04:11) [GET]
+  Session ID: a593f0bc84c07511cba9ce0e33f420c7
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000346)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00225 (443 reqs/sec) | Rendering: 0.00123 (54%) | DB: 0.00109 (48%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.001633)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:09:33', NULL, '2009-05-16 18:09:33')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:09:33) [GET]
+  Session ID: 890ee7ff072a92d9ee9fae6ef5574121
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000291)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01310 (76 reqs/sec) | Rendering: 0.00300 (22%) | DB: 0.00192 (14%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000855)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:09:33', NULL, '2009-05-16 18:09:33')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:09:33) [GET]
+  Session ID: bc2e9c2906e74a311a0a2617cdabbdb4
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000285)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00276 (362 reqs/sec) | Rendering: 0.00102 (37%) | DB: 0.00114 (41%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000248)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:09:33', NULL, '2009-05-16 18:09:33')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:09:33) [GET]
+  Session ID: 58cf0dc43f0b8bc1431ea0b5d75662bc
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000412)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01778 (56 reqs/sec) | Rendering: 0.00175 (9%) | DB: 0.00066 (3%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.001646)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:11:19', NULL, '2009-05-16 18:11:19')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:11:19) [GET]
+  Session ID: 1c3bb2dbc437250bf11d89c675a11fa6
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000527)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.02022 (49 reqs/sec) | Rendering: 0.00461 (22%) | DB: 0.00217 (10%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.001476)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:11:19', NULL, '2009-05-16 18:11:19')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:11:19) [GET]
+  Session ID: 7f4097a4ecd06720aa0c86453f541353
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.001781)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00662 (151 reqs/sec) | Rendering: 0.00220 (33%) | DB: 0.00326 (49%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000478)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:11:19', NULL, '2009-05-16 18:11:19')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:11:19) [GET]
+  Session ID: bfc0da64051f2c0b4140d5a4031573bf
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000341)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00273 (365 reqs/sec) | Rendering: 0.00111 (40%) | DB: 0.00082 (29%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000806)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:13:57', NULL, '2009-05-16 18:13:57')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:13:57) [GET]
+  Session ID: 000dd194e6a436109c29382c56802efd
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000477)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.02828 (35 reqs/sec) | Rendering: 0.01368 (48%) | DB: 0.00128 (4%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000721)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:13:57', NULL, '2009-05-16 18:13:57')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:13:57) [GET]
+  Session ID: 7512d65aa0028c14bfb9358391cd8475
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000233)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01817 (55 reqs/sec) | Rendering: 0.01392 (76%) | DB: 0.00095 (5%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000308)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:13:57', NULL, '2009-05-16 18:13:57')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:13:57) [GET]
+  Session ID: 951297573c6b982d287bd07ec7dfc891
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000245)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00282 (354 reqs/sec) | Rendering: 0.00140 (49%) | DB: 0.00055 (19%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.001123)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:14:41', NULL, '2009-05-16 18:14:41')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:14:41) [GET]
+  Session ID: 5d695a56d0ed891a7851d9769fa09060
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000386)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01051 (95 reqs/sec) | Rendering: 0.00275 (26%) | DB: 0.00151 (14%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000627)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:14:41', NULL, '2009-05-16 18:14:41')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:14:41) [GET]
+  Session ID: f5bae22980e192b67e53606393ad319f
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000447)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00500 (199 reqs/sec) | Rendering: 0.00191 (38%) | DB: 0.00107 (21%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.012326)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:14:41', NULL, '2009-05-16 18:14:41')[0m
+  [4;35;1mTask Update (0.000334)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-05-16 18:14:41', "category" = 'Honey-Do' WHERE "id" = 1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:14:41) [GET]
+  Session ID: 21c7d453633f714bd30e913fb1eae9c9
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000478)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00355 (281 reqs/sec) | Rendering: 0.00165 (46%) | DB: 0.01314 (369%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000586)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:40:43', NULL, '2009-05-16 18:40:43')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:40:43) [GET]
+  Session ID: 06852570fb58207b7b4104be0b3e44e8
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000435)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01017 (98 reqs/sec) | Rendering: 0.00276 (27%) | DB: 0.00102 (10%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000424)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:40:43', NULL, '2009-05-16 18:40:43')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:40:43) [GET]
+  Session ID: b0722a0eea384b9fbbb4d89a2e08985c
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000349)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00307 (326 reqs/sec) | Rendering: 0.00151 (49%) | DB: 0.00077 (25%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000240)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:40:43', NULL, '2009-05-16 18:40:43')[0m
+  [4;35;1mTask Update (0.000186)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-05-16 18:40:43', "category" = 'Honey-Do' WHERE "id" = 1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:40:43) [GET]
+  Session ID: fb67de4943e09ce669a5a1118c40965b
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.017958)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.02025 (49 reqs/sec) | Rendering: 0.00106 (5%) | DB: 0.01838 (90%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:40:43) [GET]
+  Session ID: 04d2bf6fbafbe0b9dbdc0af1360f38d0
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000011)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00165 (607 reqs/sec) | Rendering: 0.00044 (26%) | DB: 0.00001 (0%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-05-16 14:40:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.00328 (304 reqs/sec) | Rendering: 0.00253 (76%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"name"=>""}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-05-16 14:40:43) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"name"=>""}, "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00244 (66%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.000579)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:45:21', NULL, '2009-05-16 18:45:21')[0m
+REQUESTING PAGE: GET /tasks with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:45:21) [GET]
+  Session ID: e747dbbd4fe296a6802a8a83ac0e101b
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000475)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.02963 (33 reqs/sec) | Rendering: 0.01654 (55%) | DB: 0.00105 (3%) | 200 OK [http://www.example.com/tasks]
+  [4;36;1mTask Create (0.002249)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:45:21', NULL, '2009-05-16 18:45:21')[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:45:21) [GET]
+  Session ID: 7cec62f29730957b5b04e5ea7de63afa
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000390)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00311 (321 reqs/sec) | Rendering: 0.00147 (47%) | DB: 0.00264 (84%) | 200 OK [http://www.example.com/]
+  [4;36;1mTask Create (0.000566)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "category", "updated_at") VALUES('Take out the trash', '2009-05-16 18:45:21', NULL, '2009-05-16 18:45:21')[0m
+  [4;35;1mTask Update (0.000258)[0m   [0mUPDATE "tasks" SET "updated_at" = '2009-05-16 18:45:21', "category" = 'Honey-Do' WHERE "id" = 1[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:45:21) [GET]
+  Session ID: 011b9fe1780fdd1d0b9f96629625e05b
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.017520)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.02111 (47 reqs/sec) | Rendering: 0.00148 (6%) | DB: 0.01834 (86%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:45:21) [GET]
+  Session ID: 1f6c16736b876dc5153bea367ac96324
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.014171)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01590 (62 reqs/sec) | Rendering: 0.00071 (4%) | DB: 0.01417 (89%) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /tasks/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-05-16 14:45:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.00324 (308 reqs/sec) | Rendering: 0.00232 (71%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks/new]
+REQUESTING PAGE: POST /tasks with {"commit"=>"Create", "task"=>{"name"=>""}} and HTTP headers {"HTTP_REFERER"=>"/tasks/new"}
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-05-16 14:45:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"commit"=>"Create", "action"=>"create", "task"=>{"name"=>""}, "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.01478 (67 reqs/sec) | Rendering: 0.00226 (15%) | DB: 0.00000 (0%) | 200 OK [http://www.example.com/tasks]

@@ -1,0 +1,539 @@
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2009-05-16 10:57:37) [GET]
+  Session ID: f169cb162beec7e5b11fd1a39efdebb5
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_migrations: SELECT version FROM schema_migrations[0m
+Completed in 0.05036 (19 reqs/sec) | Rendering: 0.00328 (6%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing InfoController#properties (for 127.0.0.1 at 2009-05-16 11:51:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"action"=>"properties", "controller"=>"rails/info"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: schema_migrations: SELECT version FROM schema_migrations[0m
+Completed in 0.05421 (18 reqs/sec) | Rendering: 0.00436 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.001019)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000319)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.007118)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.005401)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000133)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20090516160505)
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.003970)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.010923)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090516160505')[0m
+  [4;35;1mSQL (0.000227)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000290)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.001314)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000963)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000473)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000192)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004597)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000192)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.005801)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.007022)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000059)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006350)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 12:15:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.002551)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01885 (53 reqs/sec) | Rendering: 0.00570 (30%) | DB: 0.00255 (13%) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-05-16 12:15:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f1a56b94d093a66aaea213b7dcaf8ff177b76802
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.02726 (36 reqs/sec) | Rendering: 0.01104 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-05-16 12:15:58) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1M2U5MDM2YTNmYWRl
+ZmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--245b5056745f6e13cf88ac737e7ff021851fb0a4
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aec22f84e390a90212e60946425010b4752f888f", "action"=>"create", "task"=>{"name"=>"Punch Scott C Reynolds"}, "controller"=>"tasks"}
+  [4;36;1mTask Create (0.001320)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at") VALUES('Punch Scott C Reynolds', '2009-05-16 16:15:58', '2009-05-16 16:15:58')[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 0.01692 (59 reqs/sec) | DB: 0.00132 (7%) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-05-16 12:15:58) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiI1Rhc2sgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVk
+LgY6CkB1c2VkewY7BkY6DGNzcmZfaWQiJTFlM2VkZGU2Y2YyMjVjZmQxNTNl
+OTAzNmEzZmFkZWZl--d625cd65404de84cfc5f916156b5f3f4818cd3dc
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000284)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 0.01100 (90 reqs/sec) | Rendering: 0.00181 (16%) | DB: 0.00028 (2%) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:39:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1M2U5MDM2YTNmYWRl
+ZmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiNUYXNrIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G
+OgpAdXNlZHsGOwdU--66d7e007180dc811a229f57e431174dd400305a2
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000170)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01176 (85 reqs/sec) | Rendering: 0.00361 (30%) | DB: 0.00017 (1%) | 200 OK [http://localhost/]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 13:50:54) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1
+M2U5MDM2YTNmYWRlZmU=--879a8d2687310028c3528d160b9aef6332d53438
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000931)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01852 (53 reqs/sec) | Rendering: 0.00643 (34%) | DB: 0.00093 (5%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.002190)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000179)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000182)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006253)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000312)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004682)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008435)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000111)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006458)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.000897)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000167)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000159)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000065)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000164)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.007659)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000183)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004239)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.007466)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000093)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.005987)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.000437)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000208)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000243)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000081)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000154)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.008247)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000205)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.007349)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008064)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000105)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006265)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.001275)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000186)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000076)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000198)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.008397)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000270)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.007791)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008048)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000106)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006361)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.001045)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20090516160505)
+  [4;36;1mSQL (0.000178)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddCategoryToTasks (20090516180631)
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.005381)[0m   [0mALTER TABLE "tasks" ADD "category" varchar(255)[0m
+  [4;36;1mSQL (0.013581)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.031029)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090516180631')[0m
+  [4;36;1mSQL (0.000368)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000251)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000703)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.001928)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000299)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000300)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000369)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000077)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000250)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.007729)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000177)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004306)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008933)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000501)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000113)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.005317)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003604)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.001543)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.001064)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.001451)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000255)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006867)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000089)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.004762)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.007980)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000256)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000112)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.007487)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.006704)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.002580)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000227)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000073)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000182)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.009177)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000228)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006440)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008098)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000112)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006126)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003908)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:12:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1M2U5MDM2YTNmYWRl
+ZmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--245b5056745f6e13cf88ac737e7ff021851fb0a4
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000711)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00857 (116 reqs/sec) | Rendering: 0.00363 (42%) | DB: 0.00071 (8%) | 200 OK [http://localhost/]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:13:38) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1
+M2U5MDM2YTNmYWRlZmU=--879a8d2687310028c3528d160b9aef6332d53438
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.001210)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01737 (57 reqs/sec) | Rendering: 0.00631 (36%) | DB: 0.00121 (6%) | 200 OK [http://localhost/]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:13:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWUzZWRkZTZjZjIyNWNmZDE1M2U5MDM2YTNmYWRl
+ZmUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--245b5056745f6e13cf88ac737e7ff021851fb0a4
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;36;1mTask Load (0.000616)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.00976 (102 reqs/sec) | Rendering: 0.00400 (40%) | DB: 0.00062 (6%) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.001569)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000283)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000076)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000198)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.016248)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000411)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006850)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.007534)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000116)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.006040)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003775)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.002018)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000339)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000270)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.008337)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000222)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003502)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008084)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000108)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.005975)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003971)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+  [4;36;1mSQL (0.002072)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000077)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000234)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006169)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000229)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.009068)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.008180)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000115)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.009727)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003592)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-05-16 14:42:12) [GET]
+  Session ID: d2842f5729f6e095e0fc9ab662e6204e
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mTask Load (0.000437)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 0.01124 (88 reqs/sec) | Rendering: 0.00430 (38%) | DB: 0.00044 (3%) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-05-16 14:42:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMjQwODZkNTBjYTc1NmY3YTMxYzY5ZWNhNjBjNzc1
+ZTYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--1202ad0905b0b545b8c4f5a608ddd85c71c73d70
+  Parameters: {"action"=>"new", "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.00906 (110 reqs/sec) | Rendering: 0.00347 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-05-16 14:42:15) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlMjQwODZkNTBjYTc1NmY3YTMx
+YzY5ZWNhNjBjNzc1ZTY=--213958de1d1518277295168b833d2e988b7f68d6
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dc8d6e988e1b4ac6ad0e3980b60df2e1ffe6809a", "action"=>"create", "task"=>{"name"=>""}, "controller"=>"tasks"}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 0.04610 (21 reqs/sec) | Rendering: 0.00528 (11%) | DB: 0.00000 (0%) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.000154)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000073)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.000738)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000201)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.007587)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "category" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000213)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.008751)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.007754)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000113)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.034351)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
+  [4;35;1mSQL (0.003860)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
