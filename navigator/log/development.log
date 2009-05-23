@@ -1,0 +1,373 @@
+  [4;36;1mSQL (0.001289)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000279)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.003193)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.006040)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000110)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090522170805)
+  [4;36;1mSQL (0.000175)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.007156)[0m   [0mCREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer DEFAULT NULL NULL, "name" varchar(255) DEFAULT NULL NULL, "content" text DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.026504)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090522170805')[0m
+  [4;35;1mSQL (0.000426)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000228)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000067)[0m   [0mPRAGMA index_list("pages")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:09:00) [GET]
+  Session ID: 518811fe5f4075b5baf88ed1f6191fae
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000626)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.01232 (81 reqs/sec) | Rendering: 0.00514 (41%) | DB: 0.00063 (5%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-22 13:09:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--be631110e19c2a3e9e64b331a96f486efb0160bb
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+Rendered pages/_form (0.00637)
+Completed in 0.03207 (31 reqs/sec) | Rendering: 0.01089 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-22 13:20:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mPage Load (0.000718)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.00472)
+Completed in 0.02887 (34 reqs/sec) | Rendering: 0.01113 (38%) | DB: 0.00072 (2%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-22 13:21:17) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"Root Page", "parent_id"=>"", "content"=>"Root page content"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.001056)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Root Page', '2009-05-22 17:21:17', '2009-05-22 17:21:17', NULL, 'Root page content')[0m
+Redirected to http://localhost:3000/pages/1
+Completed in 0.03087 (32 reqs/sec) | DB: 0.00106 (3%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-22 13:21:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--60fcf25aec25968ecb317a726d3e66e7ad790af3
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000319)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.01266 (79 reqs/sec) | Rendering: 0.00440 (34%) | DB: 0.00032 (2%) | 200 OK [http://localhost/pages/1]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:21:23) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c6727651f06f5c74dcbc296e2abce94ba361c3ef
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001038)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.02757 (36 reqs/sec) | Rendering: 0.00543 (19%) | DB: 0.00104 (3%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-22 13:21:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mPage Load (0.001066)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.00854)
+Completed in 0.02347 (42 reqs/sec) | Rendering: 0.01043 (44%) | DB: 0.00107 (4%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-22 13:21:32) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"child page", "parent_id"=>"1", "content"=>"child"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.000458)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('child page', '2009-05-22 17:21:32', '2009-05-22 17:21:32', 1, 'child')[0m
+Redirected to http://localhost:3000/pages/2
+Completed in 0.01849 (54 reqs/sec) | DB: 0.00046 (2%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-22 13:21:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--60fcf25aec25968ecb317a726d3e66e7ad790af3
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000449)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.01221 (81 reqs/sec) | Rendering: 0.00288 (23%) | DB: 0.00045 (3%) | 200 OK [http://localhost/pages/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:21:35) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c6727651f06f5c74dcbc296e2abce94ba361c3ef
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.002237)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.01411 (70 reqs/sec) | Rendering: 0.00506 (35%) | DB: 0.00224 (15%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-22 13:21:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mPage Load (0.000756)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.00594)
+Completed in 0.02635 (37 reqs/sec) | Rendering: 0.00790 (29%) | DB: 0.00076 (2%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-22 13:21:53) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"Products", "parent_id"=>"", "content"=>"products"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.000475)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Products', '2009-05-22 17:21:53', '2009-05-22 17:21:53', NULL, 'products')[0m
+Redirected to http://localhost:3000/pages/3
+Completed in 0.01994 (50 reqs/sec) | DB: 0.00047 (2%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-22 13:21:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--60fcf25aec25968ecb317a726d3e66e7ad790af3
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000260)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.01124 (88 reqs/sec) | Rendering: 0.00384 (34%) | DB: 0.00026 (2%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:21:56) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c6727651f06f5c74dcbc296e2abce94ba361c3ef
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000265)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.00931 (107 reqs/sec) | Rendering: 0.00284 (30%) | DB: 0.00027 (2%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-22 13:21:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mPage Load (0.000842)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.00550)
+Completed in 0.02072 (48 reqs/sec) | Rendering: 0.00898 (43%) | DB: 0.00084 (4%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-22 13:22:04) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"Support", "parent_id"=>"", "content"=>"support"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.000000)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Support', '2009-05-22 17:22:04', '2009-05-22 17:22:04', NULL, 'support')[0m
+Redirected to http://localhost:3000/pages/4
+Completed in 0.02095 (47 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-22 13:22:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--60fcf25aec25968ecb317a726d3e66e7ad790af3
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000031)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 0.01060 (94 reqs/sec) | Rendering: 0.00399 (37%) | DB: 0.00003 (0%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:22:08) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c6727651f06f5c74dcbc296e2abce94ba361c3ef
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000932)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 0.01103 (90 reqs/sec) | Rendering: 0.00352 (31%) | DB: 0.00093 (8%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 13:33:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.001601)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.000531)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.01930 (51 reqs/sec) | Rendering: 0.01080 (55%) | DB: 0.00213 (11%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 18:31:56) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.003973)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.001368)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.06731 (14 reqs/sec) | Rendering: 0.03153 (46%) | DB: 0.00534 (7%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 18:31:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.005698)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.001084)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04745 (21 reqs/sec) | Rendering: 0.02191 (46%) | DB: 0.00678 (14%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-22 18:32:19) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.005013)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.003442)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.34017 (2 reqs/sec) | Rendering: 0.03723 (10%) | DB: 0.00846 (2%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-23 17:18:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;35;1mPage Load (0.002605)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.05246)
+  [4;36;1mPage Load (0.024695)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.15638 (6 reqs/sec) | Rendering: 0.05845 (37%) | DB: 0.02730 (17%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-23 17:18:31) [POST]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"Product page", "parent_id"=>"3", "content"=>"under product page"}, "controller"=>"pages"}
+  [4;35;1mPage Create (0.047486)[0m   [0mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Product page', '2009-05-23 21:18:32', '2009-05-23 21:18:32', 3, 'under product page')[0m
+Redirected to http://localhost:3000/pages/5
+Completed in 0.18878 (5 reqs/sec) | DB: 0.04749 (25%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-23 17:18:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--60fcf25aec25968ecb317a726d3e66e7ad790af3
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"pages"}
+  [4;36;1mPage Load (0.002194)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.002187)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.11276 (8 reqs/sec) | Rendering: 0.02466 (21%) | DB: 0.00438 (3%) | 200 OK [http://localhost/pages/5]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-23 17:18:35) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c6727651f06f5c74dcbc296e2abce94ba361c3ef
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.034965)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.002262)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.85132 (1 reqs/sec) | Rendering: 0.65368 (76%) | DB: 0.03723 (4%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-05-23 17:18:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"edit", "id"=>"5", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001077)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+  [4;35;1mPage Load (0.015759)[0m   [0mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.05950)
+  [4;36;1mPage Load (0.002376)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.19080 (5 reqs/sec) | Rendering: 0.09951 (52%) | DB: 0.01921 (10%) | 200 OK [http://localhost/pages/5/edit]
+
+
+Processing PagesController#update (for 127.0.0.1 at 2009-05-23 17:18:55) [PUT]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "_method"=>"put", "action"=>"update", "id"=>"5", "page"=>{"name"=>"Widgets", "parent_id"=>"3", "content"=>"under product page"}, "controller"=>"pages"}
+  [4;35;1mPage Load (0.001465)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+  [4;36;1mPage Update (0.001469)[0m   [0;1mUPDATE "pages" SET "updated_at" = '2009-05-23 21:18:56', "name" = 'Widgets' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/pages/5
+Completed in 0.40386 (2 reqs/sec) | DB: 0.00293 (0%) | 302 Found [http://localhost/pages/5]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-23 17:18:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgdXBkYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B0Y=--0f66133ff802dcee8cbfb3cff4f7db460adae5c4
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"pages"}
+  [4;35;1mPage Load (0.001372)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mPage Load (0.001200)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.05553 (18 reqs/sec) | Rendering: 0.01507 (27%) | DB: 0.00257 (4%) | 200 OK [http://localhost/pages/5]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-23 17:19:01) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSB1cGRhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGVDoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--3202aee7d3b0c32716844f5c06190693de7f2cb0
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.005003)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.002480)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.11994 (8 reqs/sec) | Rendering: 0.05860 (48%) | DB: 0.00748 (6%) | 200 OK [http://localhost/pages]
