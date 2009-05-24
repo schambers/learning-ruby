@@ -371,3 +371,379 @@ Rendering template within layouts/application
 Rendering pages/index
   [4;36;1mPage Load (0.002480)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
 Completed in 0.11994 (8 reqs/sec) | Rendering: 0.05860 (48%) | DB: 0.00748 (6%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-23 17:35:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.009130)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.002323)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.05459 (18 reqs/sec) | Rendering: 0.02458 (45%) | DB: 0.01145 (20%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-23 17:35:06) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEy
+MjdiNmU4ZjRkYzBmNWQ=--4b2a13c9fc914f0098f54339f97c4087420efcff
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;36;1mPage Load (0.002548)[0m   [0;1mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.03757)
+  [4;35;1mPage Load (0.001619)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.12079 (8 reqs/sec) | Rendering: 0.05615 (46%) | DB: 0.00417 (3%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-23 17:35:22) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e0a7e09d38f580f87552ae4d63a8edfe4188f50d
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"5a423b7ca4db50d37471ff18f2b59174f5f75c9f", "action"=>"create", "page"=>{"name"=>"Water Bottles", "parent_id"=>"3", "content"=>"new water bottles for sale"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.002164)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Water Bottles', '2009-05-23 21:35:22', '2009-05-23 21:35:22', 3, 'new water bottles for sale')[0m
+Redirected to http://localhost:3000/pages/6
+Completed in 0.12480 (8 reqs/sec) | DB: 0.00216 (1%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-23 17:35:22) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGRjoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4
+ZjRkYzBmNWQ=--c056c6fb39fe2c3d9dcce810dcd0a0d76df0e8c2
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"pages"}
+  [4;35;1mPage Load (0.001273)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mPage Load (0.001147)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.05938 (16 reqs/sec) | Rendering: 0.02147 (36%) | DB: 0.00242 (4%) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-23 17:35:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTczMGEyZTBhMmVmZDNlYzEyMjdiNmU4ZjRkYzBm
+NWQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIh9TdWNjZXNzZnVsbHkgY3JlYXRlZCBwYWdlLgY6CkB1
+c2VkewY7B1Q=--540a3db8f531e49c6f716fd6d352ffd9fc0025db
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mPage Load (0.002120)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Load (0.000738)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.05080 (19 reqs/sec) | Rendering: 0.02816 (55%) | DB: 0.00286 (5%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-24 06:40:05) [GET]
+  Session ID: 6d1d0208809fec81eaf6236f9fcae3f7
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.006486)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.002001)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.30346 (3 reqs/sec) | Rendering: 0.18521 (61%) | DB: 0.00849 (2%) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-24 06:40:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.002167)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.001441)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04084 (24 reqs/sec) | Rendering: 0.02103 (51%) | DB: 0.00361 (8%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-24 06:40:55) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.003578)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.001810)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.08383 (11 reqs/sec) | Rendering: 0.02813 (33%) | DB: 0.00539 (6%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:40:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001870)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.002272)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04255 (23 reqs/sec) | Rendering: 0.01663 (39%) | DB: 0.00414 (9%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:41:07) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000847)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.002009)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.06929 (14 reqs/sec) | Rendering: 0.03686 (53%) | DB: 0.00286 (4%) | 200 OK [http://localhost/pages/1]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:41:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000801)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.031895)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.07221 (13 reqs/sec) | Rendering: 0.01469 (20%) | DB: 0.03270 (45%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:45:58) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000943)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.002377)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04321 (23 reqs/sec) | Rendering: 0.01422 (32%) | DB: 0.00332 (7%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:46:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.003588)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001527)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.06662 (15 reqs/sec) | Rendering: 0.00971 (14%) | DB: 0.00512 (7%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:46:03) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000888)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001472)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.03829 (26 reqs/sec) | Rendering: 0.01374 (35%) | DB: 0.00236 (6%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:46:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000787)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001681)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.06196 (16 reqs/sec) | Rendering: 0.01012 (16%) | DB: 0.00247 (3%) | 200 OK [http://localhost/pages/1]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:46:07) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000771)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001029)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.06598 (15 reqs/sec) | Rendering: 0.03757 (56%) | DB: 0.00180 (2%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:52:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000946)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001714)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 4) [0m
+  [4;36;1mPage Load (0.003091)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.26926 (3 reqs/sec) | Rendering: 0.01716 (6%) | DB: 0.00575 (2%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:52:05) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"pages"}
+  [4;35;1mPage Load (0.001176)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mPage Load (0.000409)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 4) [0m
+  [4;35;1mPage Load (0.001436)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.07728 (12 reqs/sec) | Rendering: 0.01590 (20%) | DB: 0.00302 (3%) | 200 OK [http://localhost/pages/4]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:52:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000698)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.001162)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mPage Load (0.002666)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.03799 (26 reqs/sec) | Rendering: 0.01319 (34%) | DB: 0.00453 (11%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:52:13) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000781)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mPage Load (0.000575)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 6) [0m
+  [4;35;1mPage Load (0.000829)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.03817 (26 reqs/sec) | Rendering: 0.01506 (39%) | DB: 0.00218 (5%) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:52:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001129)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mPage Load (0.000919)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mPage Load (0.462606)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.70725 (1 reqs/sec) | Rendering: 0.12859 (18%) | DB: 0.46465 (65%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:54:43) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;35;1mPage Load (0.001039)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mSQL (0.001096)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;35;1mPage Load (0.001300)[0m   [0mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mPage Load (0.001469)[0m   [0;1mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.09350 (10 reqs/sec) | Rendering: 0.01765 (18%) | DB: 0.00490 (5%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:54:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000791)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mSQL (0.000638)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;35;1mPage Load (0.001459)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.07384 (13 reqs/sec) | Rendering: 0.04830 (65%) | DB: 0.00289 (3%) | 200 OK [http://localhost/pages/5]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:58:23) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001062)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mSQL (0.023073)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mPage Load (0.002597)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;35;1mPage Load (0.001849)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.08508 (11 reqs/sec) | Rendering: 0.02542 (29%) | DB: 0.02858 (33%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:58:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"pages"}
+  [4;36;1mPage Load (0.000831)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mSQL (0.000679)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 5) [0m
+  [4;36;1mPage Load (0.001263)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+  [4;35;1mPage Load (0.005654)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.05814 (17 reqs/sec) | Rendering: 0.01723 (29%) | DB: 0.00843 (14%) | 200 OK [http://localhost/pages/5]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:58:52) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"pages"}
+  [4;36;1mPage Load (0.001042)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;35;1mSQL (0.000630)[0m   [0mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;36;1mPage Load (0.004057)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages".parent_id = 3) [0m
+  [4;35;1mPage Load (0.000980)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04375 (22 reqs/sec) | Rendering: 0.01323 (30%) | DB: 0.00671 (15%) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-24 06:59:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mPage Load (0.006437)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;35;1mPage Load (0.001353)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04417 (22 reqs/sec) | Rendering: 0.01934 (43%) | DB: 0.00779 (17%) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2009-05-24 06:59:08) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7ADoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4
+MGVjNDBlZDY4MTIxODU=--239f9635f0c8baa74b2d9ea7e24ca2fcc9ef7e6d
+  Parameters: {"action"=>"new", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/new
+  [4;36;1mPage Load (0.003318)[0m   [0;1mSELECT * FROM "pages" ORDER BY name[0m
+Rendered pages/_form (0.01649)
+  [4;35;1mPage Load (0.003211)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.07220 (13 reqs/sec) | Rendering: 0.04171 (57%) | DB: 0.00653 (9%) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2009-05-24 06:59:29) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBlZDY4MTIx
+ODUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c169812be4c3cbb3bc12109f4e1c63ff0e75400b
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"63981c68fd46b4d9750d29339dd030b0ec61b511", "action"=>"create", "page"=>{"name"=>"Sub Widgets", "parent_id"=>"5", "content"=>"sub-widgets"}, "controller"=>"pages"}
+  [4;36;1mPage Create (0.001144)[0m   [0;1mINSERT INTO "pages" ("name", "created_at", "updated_at", "parent_id", "content") VALUES('Sub Widgets', '2009-05-24 10:59:29', '2009-05-24 10:59:29', 5, 'sub-widgets')[0m
+Redirected to http://localhost:3000/pages/7
+Completed in 0.07864 (12 reqs/sec) | DB: 0.00114 (1%) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-05-24 06:59:30) [GET]
+  Session ID: BAh7ByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiH1N1Y2Nlc3NmdWxseSBjcmVhdGVkIHBhZ2UuBjoK
+QHVzZWR7BjsGRjoMY3NyZl9pZCIlZDQ0ZDkwYTVjMzA4N2E1NGI4MGVjNDBl
+ZDY4MTIxODU=--25ed56b7433414fa3639fcdad9e9ce25d6461c39
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"pages"}
+  [4;35;1mPage Load (0.000898)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering pages/show
+  [4;36;1mSQL (0.000980)[0m   [0;1mSELECT count(*) AS count_all FROM "pages" WHERE ("pages".parent_id = 7) [0m
+  [4;35;1mPage Load (0.001768)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 5) [0m
+  [4;36;1mPage Load (0.000793)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+  [4;35;1mPage Load (0.001574)[0m   [0mSELECT * FROM "pages" WHERE (parent_id IS NULL) [0m
+Completed in 0.04566 (21 reqs/sec) | Rendering: 0.01614 (35%) | DB: 0.00601 (13%) | 200 OK [http://localhost/pages/7]

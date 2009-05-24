@@ -1,17 +1,20 @@
-<% title "Page" %>
+<% title @page.name %>
+
+<% unless @page.children.empty? -%>
+<ul id="submenu">
+  <% for page in @page.children -%>
+    <li><%= link_to h(page.name), page %></li>
+  <% end -%>
+</ul>
+<% end -%>
 
 <p>
-  <strong>Parent:</strong>
-  <%=h @page.parent_id %>
+<% for page in @page.ancestors.reverse -%>
+  <%= link_to h(page.name), page %> &gt;
+<% end -%>
 </p>
-<p>
-  <strong>Name:</strong>
-  <%=h @page.name %>
-</p>
-<p>
-  <strong>Content:</strong>
-  <%=h @page.content %>
-</p>
+
+<%= simple_format @page.content %>
 
 <p>
   <%= link_to "Edit", edit_page_path(@page) %> |
