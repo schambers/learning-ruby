@@ -1,0 +1,2 @@
+#autotest: features -r features --format pretty --color
+default: --format progress features
