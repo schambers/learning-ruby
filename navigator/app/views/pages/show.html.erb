@@ -8,7 +8,7 @@
 </ul>
 <% end -%>
 
-<p>
+<p>  
 <% for page in @page.ancestors.reverse -%>
   <%= link_to h(page.name), page %> &gt;
 <% end -%>
