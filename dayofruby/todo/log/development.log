@@ -962,3 +962,77 @@ Completed in 0.04064 (24 reqs/sec) | Rendering: 0.01746 (42%) | DB: 0.00075 (1%)
   [4;35;1mSQL (0.000421)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (0.012785)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090516180631')[0m
   [4;35;1mSQL (0.013964)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090516160505')[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-28 07:25:31) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/demo_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.9ms)
+Rendered rescues/_request_and_response (59.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-28 07:25:42) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/demo_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (217.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-28 07:26:03) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/demo_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (271.3ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DemoController#index (for 127.0.0.1 at 2009-06-28 07:29:07) [GET]
+Rendering demo/index
+Completed in 88ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/demo/index]
+
+
+Processing DemoController#index (for 127.0.0.1 at 2009-06-28 08:43:12) [GET]
+Completed in 74ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/demo/index]
+
+
+Processing DemoController#index (for 127.0.0.1 at 2009-06-28 08:45:14) [GET]
+Rendering demo/index
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/demo/index]
